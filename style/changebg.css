@@ -1,0 +1,42 @@
+.changebg {
+	background-color: var(--cyan-lighter);
+	border: var(--thick) solid var(--transparent);
+	border-radius: 2rem;
+	box-shadow: var(--shadow-general);
+	cursor: pointer;
+	padding: 0.6rem;
+	position: absolute;
+	right: 1.5rem;
+	top: 1.5rem;
+	transition: background-color 0.5s;
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+}
+
+.changebg:hover {
+	background-color: var(--cyan-darker);
+}
+
+.changebg:focus {
+	border-color: var(--gold);
+}
+
+@media (min-width: 768px) {
+	.changebg {
+		padding: 0.5rem 1rem;
+	}
+}
+
+.changebg-text {
+	color: var(--gray-8);
+	display: none;
+	transition: color 0.5s;
+}
+
+@media (min-width: 768px) {
+	.changebg-text {
+		display: initial;
+	}
+}

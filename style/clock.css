@@ -1,0 +1,28 @@
+.clock {
+	background-color: var(--translucent-6);
+	border-radius: 0.5rem;
+	box-shadow: var(--shadow-general);
+	margin-top: 24vh;
+	padding: 1rem 1.5rem;
+	width: -webkit-fit-content;
+	width: -moz-fit-content;
+	width: fit-content;
+}
+
+@media (min-width: 768px) {
+	.clock {
+		border-radius: 1rem;
+		padding: 1.5rem 2rem 1rem;
+	}
+}
+
+.clock-time {
+	font-size: 4rem;
+	font-weight: 200;
+	line-height: 1;
+}
+
+.clock-date {
+	font-size: 1.1rem;
+	text-align: center;
+}

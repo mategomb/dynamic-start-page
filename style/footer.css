@@ -1,0 +1,55 @@
+.footer {
+	background-color: var(--gray-7);
+	bottom: 0;
+	box-shadow: var(--shadow-general);
+	color: var(--gray-5);
+	font-size: 0.9rem;
+	margin-top: 4vh;
+	padding: 0.6rem 0;
+	text-align: center;
+	width: 100%;
+}
+
+.credits-search {
+	border: var(--thick) solid var(--transparent);
+	border-radius: 2rem;
+	display: block;
+	padding: 0 0.5rem;
+	transition: color 0.5s;
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+}
+
+.credits-me {
+	margin: 0 0.5rem;
+}
+
+@media (min-width: 576px) {
+	.credits-search {
+		display: inline-block;
+	}
+}
+
+.credits-search:hover {
+	color: var(--gray-3);
+}
+
+.credits-search:focus {
+	border-color: var(--gold);
+}
+
+.credits-separator {
+	display: none;
+}
+
+@media (min-width: 576px) {
+	.credits-separator {
+		display: initial;
+	}
+
+	.credits-me {
+		display: inline-block;
+	}
+}

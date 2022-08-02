@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Start Page</title>
+		<link
+			href="https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;600;700;800;900&display=swap"
+			rel="stylesheet"
+		/>
+		<link rel="stylesheet" href="/sanitize.css" />
+		<link href="/style/imports.css" rel="stylesheet" />
+	</head>
+	<body>
+		<main class="main">
+			<button class="changebg" id="js-changebg">
+				<span class="changebg-icon">🖼️</span>
+				<span class="changebg-text">Change Background</span>
+			</button>
+			<div class="clock">
+				<div class="clock-time" id="js-clock-time">00:00</div>
+				<div class="clock-date" id="js-clock-date">Mon, 01 Jan 1999</div>
+			</div>
+			<form class="search" id="js-search">
+				<input
+					class="search-bar"
+					id="js-search-bar"
+					type="search"
+					placeholder="What are we looking for today? 🤔"
+					required
+				/>
+				<button class="search-button" type="submit">Search It 🔎</button>
+			</form>
+		</main>
+		<footer class="footer">
+			<div class="credits">
+				<a class="credits-search" href="https://duckduckgo.com/" target="_blank" rel="noreferrer"
+					>Search Provided by DuckDuckGo</a
+				>
+				<span class="credits-separator">|</span>
+				<div class="credits-me">Máté Gombkötő, 2022</div>
+			</div>
+		</footer>
+		<script src="/scripts/imports.js" type="module"></script>
+	</body>
+</html>
