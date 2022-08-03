@@ -22,7 +22,7 @@ imagePaths.night = getImagePaths("night", 3);
 
 let previousIndex = null;
 
-function loadimage() {
+function loadImage() {
 	function getRandomImage(timeOfDay) {
 		const getRandomIndex = () => Math.floor(Math.random() * imagePaths[timeOfDay].length);
 
@@ -44,6 +44,6 @@ function loadimage() {
 	document.body.style.backgroundImage = `linear-gradient(rgba(255, 255, 255, 0.05), rgba(255, 255, 255, 0.05)), url(${imageFile})`;
 }
 
-loadimage();
+loadImage();
 
-document.getElementById("js-changebg").addEventListener("click", loadimage);
+document.getElementById("js-changebg").addEventListener("click", loadImage);
