@@ -3,7 +3,7 @@
 const searchFormElement = document.getElementById("js-search");
 const searchBarElement = document.getElementById("js-search-bar");
 
-// search it at submit events
+// using the search at submit event
 
 searchFormElement.addEventListener("submit", (event) => {
 	event.preventDefault();
