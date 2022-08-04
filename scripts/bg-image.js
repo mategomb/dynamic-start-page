@@ -27,10 +27,7 @@ function loadImage() {
 		const getRandomIndex = () => Math.floor(Math.random() * imagePaths[timeOfDay].length);
 
 		let newIndex = getRandomIndex();
-
-		for (; newIndex === previousIndex; ) {
-			newIndex = getRandomIndex();
-		}
+		for (; newIndex === previousIndex; ) newIndex = getRandomIndex();
 
 		previousIndex = newIndex;
 
