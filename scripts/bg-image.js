@@ -33,20 +33,14 @@ let previousIndex = null;
 function loadImage() {
 	function getRandomImage(timeOfDay) {
 		const getRandomIndex = () => Math.floor(Math.random() * imagePaths[timeOfDay].length);
-
 		let newIndex = getRandomIndex();
-
 		for (; newIndex === previousIndex; ) newIndex = getRandomIndex(); // to avoid reloading the same image
-
 		previousIndex = newIndex;
-
 		return imagePaths[timeOfDay][newIndex];
 	}
 
 	let hour = new Date().getHours();
-
 	let imageFile = hour >= 20 || hour <= 5 ? getRandomImage("night") : getRandomImage("day");
-
 	document.body.style.backgroundImage = `linear-gradient(rgba(255, 255, 255, 0.05), rgba(255, 255, 255, 0.05)), url(${imageFile})`;
 }
 
